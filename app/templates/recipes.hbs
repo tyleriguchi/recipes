@@ -1,5 +1,9 @@
 <ul>
-  {{#each model}}
-    <li>{{title}}</li>
+  {{#each recipe in controller}}
+    <li>
+      {{#link-to 'recipes.recipe' recipe}}
+        {{recipe.title}} - {{recipe.description}}
+      {{/link-to}}
+    </li>
   {{/each}}
 </ul>

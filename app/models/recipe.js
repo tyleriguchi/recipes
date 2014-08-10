@@ -16,7 +16,7 @@ Recipe.reopenClass({
     {
       id: 2,
       title: "Gyro",
-      descrption: "ITS A TACO"
+      description: "ITS A TACO"
     }
   ]
 });
