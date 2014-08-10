@@ -1,6 +1,6 @@
 import DS from 'ember-data';
 
-var Recipe = DS.Model.Extend({
+var Recipe = DS.Model.extend({
   title: DS.attr('string'),
   description: DS.attr('string')
 });
@@ -21,4 +21,4 @@ Recipe.reopenClass({
   ]
 });
 
-export default Recipe
+export default Recipe;
