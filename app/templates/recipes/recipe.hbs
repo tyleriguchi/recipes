@@ -1,2 +1,8 @@
-{{title}}
-{{description}}
+
+  <h2>{{title}}</h2>
+  <span>{{description}}</span>
+  <ol>
+  {{#each step in steps}}
+    <li>{{step}}</li>
+  {{/each}}
+  </ol>

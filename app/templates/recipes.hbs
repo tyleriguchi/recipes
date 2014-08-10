@@ -1,11 +1,13 @@
-<ul>
-  {{#each recipe in controller}}
-    <li>
-      {{#link-to 'recipes.recipe' recipe}}
-        {{recipe.title}} - {{recipe.description}}
-      {{/link-to}}
-    </li>
-  {{/each}}
+<aside class="recipe-list">
+  <ul>
+    {{#each recipe in controller}}
+      <li>
+        {{#link-to 'recipes.recipe' recipe}}
+          {{recipe.title}}
+        {{/link-to}}
+      </li>
+    {{/each}}
+  </ul>
+</aside>
 
-  {{outlet}}
-</ul>
+{{outlet}}
