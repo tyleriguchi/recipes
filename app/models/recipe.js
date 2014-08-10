@@ -6,7 +6,7 @@ var Recipe = DS.Model.extend({
 });
 
 Recipe.reopenClass({
-  FIXUTRES: [
+  FIXTURES: [
     {
       id: 1,
       title: "Spaghetti and meat",
