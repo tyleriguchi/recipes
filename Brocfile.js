@@ -28,4 +28,6 @@ app.import({
   ]
 });
 
+app.import('vendor/normalize.css/normalize.css');
+
 module.exports = app.toTree();
