@@ -49,6 +49,10 @@ textarea {
   resize: vertical;
 }
 
+
+/*
+* Global modifiers to make my life easier
+*/
 .col {
   @include center($pad: 4%);
   @include cf();
@@ -56,4 +60,8 @@ textarea {
 
 .col--two {
   @include col(1/2);
+}
+
+.center-text {
+  text-align: center;
 }

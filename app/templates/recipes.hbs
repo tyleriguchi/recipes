@@ -2,7 +2,7 @@
   <ul>
     {{#each recipe in controller}}
       <li>
-        {{#link-to 'recipes.recipe' recipe}}
+        {{#link-to 'recipe' recipe}}
           {{recipe.title}}
         {{/link-to}}
       </li>
@@ -10,6 +10,6 @@
   </ul>
 </aside>
 
-<div class="recipe">
-{{outlet}}
-</div>
+<span class="recipe">
+  {{outlet}}
+</span>
