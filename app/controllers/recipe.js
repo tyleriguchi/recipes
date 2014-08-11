@@ -5,5 +5,6 @@ export default Ember.ObjectController.extend({
     edit: function() {
       this.transitionToRoute('recipe.edit');
     }
+
   }
 });

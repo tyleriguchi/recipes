@@ -11,14 +11,21 @@ Recipe.reopenClass({
     {
       id: 1,
       title: "Spaghetti and meat",
-      steps: ["Cook noodles", "add meat", "eat the food"],
+      steps: [
+        {string: "Cook noodles"},
+        {string: "add meat"},
+        {string: "eat the food"}
+      ],
       description: "ITS NOODLES AND MEAT"
     },
 
     {
       id: 2,
       title: "Gyro",
-      steps: ["get lamb", "eat greek taco"],
+      steps: [
+        {string: "get lamb"},
+        {string:"eat greek taco"}
+      ],
       description: "ITS A TACO"
     }
   ]

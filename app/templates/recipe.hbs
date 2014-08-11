@@ -3,7 +3,7 @@
   <span>{{description}}</span>
   <ol>
   {{#each step in steps}}
-    <li>{{step}}</li>
+    <li>{{step.string}}</li>
   {{/each}}
   </ol>
   <button {{action "edit"}}>Edit</button>

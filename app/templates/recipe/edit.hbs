@@ -1,3 +1,17 @@
 <div>
-{{input value=title}}
+  <ul>
+    <li>Title: {{input value=title}}</li>
+    <li>Description: {{input value=description}}</li>
+    <li>
+      Steps:
+      <ol>
+      {{#each step in steps}}
+        <li>
+          {{input value=step.string}}
+        </li>
+      {{/each}}
+      </ol>
+    </li>
+    <button {{action "save"}}>Save</button>
+  </ul>
 </div>
