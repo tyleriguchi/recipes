@@ -12,9 +12,9 @@ Recipe.reopenClass({
       id: 1,
       title: "Spaghetti and meat",
       steps: [
-        {string: "Cook noodles"},
-        {string: "add meat"},
-        {string: "eat the food"}
+        {step: "Cook noodles"},
+        {step: "add meat"},
+        {step: "eat the food"}
       ],
       description: "ITS NOODLES AND MEAT"
     },
@@ -23,8 +23,8 @@ Recipe.reopenClass({
       id: 2,
       title: "Gyro",
       steps: [
-        {string: "get lamb"},
-        {string:"eat greek taco"}
+        {step: "get lamb"},
+        {step:"eat greek taco"}
       ],
       description: "ITS A TACO"
     }
