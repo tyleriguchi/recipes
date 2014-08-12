@@ -7,7 +7,11 @@
       <ol>
       {{#each step in steps}}
         <li>
-          {{input value=step.step}}
+          {{input type=text value=step.step}}
+        </li>
+      {{else}}
+        <li>
+          {{input type=text}}
         </li>
       {{/each}}
       </ol>
