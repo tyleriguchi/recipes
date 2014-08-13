@@ -1,7 +1,7 @@
 import DS from 'ember-data';
 
 var step = DS.Model.extend({
-  step: DS.attr('string'),
+  item: DS.attr('string'),
   recipe: DS.belongsTo('recipe')
 });
 
@@ -9,17 +9,17 @@ step.reopenClass({
   FIXTURES: [
     {
       id: 1,
-      step: "Cook noodles"
+      item: "Cook noodles"
     },
 
     {
       id: 2,
-      step: "add meat"
+      item: "add meat"
     },
 
     {
       id: 3,
-      step: "eat the food"
+      item: "eat the food"
     }
   ]
 });

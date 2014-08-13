@@ -7,7 +7,7 @@
       <ol>
       {{#each step in steps}}
         <li>
-          {{input type=text value=step.step}}
+          {{input type=text value=step.item}}
         </li>
       {{else}}
         <li>
@@ -16,6 +16,6 @@
       {{/each}}
       </ol>
     </li>
-    <button {{action "save"}}>Save</button>
+    <button {{action "save" this}}>Save</button>
   </ul>
 </div>
