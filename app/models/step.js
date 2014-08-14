@@ -20,6 +20,16 @@ step.reopenClass({
     {
       id: 3,
       item: "eat the food"
+    },
+
+    {
+      id: 4,
+      item: "get lamb"
+    },
+
+    {
+      id: 5,
+      item: "eat greek taco"
     }
   ]
 });

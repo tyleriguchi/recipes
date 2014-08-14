@@ -9,8 +9,8 @@ Router.map(function() {
     this.resource('recipe', { path: '/:recipe_id' }, function() {
       this.route('edit');
     });
+    this.route('create');
   });
-  this.route('create');
 });
 
 export default Router;

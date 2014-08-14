@@ -1,0 +1,15 @@
+<div>
+  <ul>
+    <li>Title: {{input value=title}}</li>
+    <li>Description: {{input value=description}}</li>
+    <li>
+      Steps:
+      <ol>
+        <li>
+          {{input type=text value=step.item}}
+        </li>
+      </ol>
+    </li>
+    <button {{action "create" this}}>Save</button>
+  </ul>
+</div>

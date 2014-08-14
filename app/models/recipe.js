@@ -13,18 +13,14 @@ Recipe.reopenClass({
       title: "Spaghetti and meat",
       steps: [1, 2, 3],
       description: "ITS NOODLES AND MEAT"
+    },
+
+    {
+      id: 2,
+      title: "Gyro",
+      steps: [4, 5],
+      description: "ITS A TACO"
     }
-    // ,
-    //
-    // {
-    //   id: 2,
-    //   title: "Gyro",
-    //   steps: [
-    //     {step: "get lamb"},
-    //     {step:"eat greek taco"}
-    //   ],
-    //   description: "ITS A TACO"
-    // }
   ]
 });
 

@@ -11,7 +11,7 @@ export default Ember.ObjectController.extend({
       // steps.each(function(item) {
       //   Ember.Logger.debug('item: ', item);
       // });
-      // this.transitionToRoute('recipe', recipe);
+      this.transitionToRoute('recipe', model);
     }
   }
 });

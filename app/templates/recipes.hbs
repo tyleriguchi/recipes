@@ -1,8 +1,8 @@
 <aside class="recipe-list">
-  <ul>
+  <ul class="recipe-list--ul">
     {{#each recipe in controller}}
-      <li>
-        {{#link-to 'recipe' recipe}}
+      <li class="recipe-list--li">
+        {{#link-to 'recipe' recipe class="recipe-list--a"}}
           {{recipe.title}}
         {{/link-to}}
       </li>
@@ -10,7 +10,7 @@
   </ul>
 </aside>
 
-<span class="recipe">
+<article class="recipe">
+  <div class="recipe--create">{{#link-to 'recipes.create'}}<button>Add recipe</button>{{/link-to}}</div>
   {{outlet}}
-  {{#link-to 'create'}}Create{{/link-to}}
-</span>
+</article>
