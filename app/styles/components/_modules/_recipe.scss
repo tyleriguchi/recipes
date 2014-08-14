@@ -1,4 +1,8 @@
 .recipe {
-  @include col(1/2);
+  @include col(2/3);
   @include cf();
+}
+
+.recipe--create {
+  margin-right: 0;
 }

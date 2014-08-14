@@ -1,4 +1,18 @@
 .recipe-list {
-  @include col(1/2);
+  @include col(1/3);
   @include cf();
+}
+
+.recipe-list--ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.recipe-list--a, &:focus, &:active {
+  color: $colorBlack;
+  text-decoration: none;
+
+  &:visited {
+    text-decoration: none;
+  }
 }

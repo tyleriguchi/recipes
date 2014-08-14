@@ -58,10 +58,12 @@ textarea {
   @include cf();
 }
 
-.col--two {
-  @include col(1/2);
-}
-
 .center-text {
   text-align: center;
+}
+
+.vert-align {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
