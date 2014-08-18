@@ -11,6 +11,8 @@ Router.map(function() {
     });
     this.route('create');
   });
+
+  this.route('splat', { path: '*:'});
 });
 
 export default Router;
