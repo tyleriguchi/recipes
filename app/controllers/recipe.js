@@ -10,6 +10,5 @@ export default Ember.ObjectController.extend({
       this.get('model').destroyRecord();
       this.transitionToRoute('recipes');
     }
-
   }
 });
