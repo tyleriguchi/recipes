@@ -4,9 +4,16 @@ export default Ember.ObjectController.extend({
   actions: {
     create: function() {
       var store = this.store;
-      var title = this.get('title').trim();
-      var description = this.get('description').trim();
+      var title = this.get('title');
+      if (!title) { return false; }
+      if (!title.trim()) { return; }
 
+      var description = this.get('description');
+      if (!description) { return false; }
+      if (!description.trim()) { return; }
+
+      // add some alert if nothing
+      
       var recipe = this.get('model');
       recipe.setProperties({
         'title': title,
