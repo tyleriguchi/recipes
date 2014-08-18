@@ -28,8 +28,8 @@ ingredient.reopenClass({
 
     {
       id: 4,
-      size: 'a full lamb',
-      item: "get lamb"
+      size: '2 pounds',
+      item: "lamb"
     },
 
     {
