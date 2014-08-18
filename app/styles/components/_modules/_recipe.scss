@@ -6,3 +6,16 @@
 .recipe--create {
   margin-right: 0;
 }
+
+.recipe__content {}
+
+.recipe__content--ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.recipe__content--ol {}
+
+.recipe--text {
+  white-space: pre-wrap;
+}
