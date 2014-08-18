@@ -30,6 +30,7 @@ app.import({
 });
 
 app.import('vendor/normalize.css/normalize.css');
+app.import("vendor/ember-localstorage-adapter/localstorage_adapter.js");
 
 
 
