@@ -1,7 +1,14 @@
 
   <h2>{{title}}</h2>
-  <span>Description: {{description}}</span>
-  <ol>
+
+  <span class="recipe--text">Description: {{description}}</span>
+
+  <ul>Ingredients
+  {{#each ingredient in model.ingredients}}
+    <li>{{ingredient.size}}, {{ingredient.item}}</li>
+  {{/each}}
+  </ul>
+  <ol>Directions
   {{#each step in model.steps}}
     <li>{{step.item}}</li>
   {{/each}}

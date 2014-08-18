@@ -2,8 +2,9 @@ import DS from 'ember-data';
 
 var Recipe = DS.Model.extend({
   title: DS.attr('string'),
+  description: DS.attr('string'),
   steps: DS.hasMany('step', { async: true }),
-  description: DS.attr('string')
+  ingredients: DS.hasMany('ingredient', { async: true })
 });
 
 Recipe.reopenClass({
@@ -11,15 +12,17 @@ Recipe.reopenClass({
     {
       id: 1,
       title: "Spaghetti and meat",
+      description: "ITS NOODLES AND MEAT",
       steps: [1, 2, 3],
-      description: "ITS NOODLES AND MEAT"
+      ingredients: [1,2,3]
     },
 
     {
       id: 2,
       title: "Gyro",
+      description: "ITS A TACO",
       steps: [4, 5],
-      description: "ITS A TACO"
+      ingredients: [4, 5]
     }
   ]
 });

@@ -1,15 +1,13 @@
-<div>
-  <ul>
-    <li>Title: {{input value=title}}</li>
-    <li>Description: {{input value=description}}</li>
-    <li>
-      Steps:
-      <ol>
-        <li>
-          {{input type=text value=stepItem}}
-        </li>
-      </ol>
-    </li>
-    <button {{action "create"}}>Create</button>
-  </ul>
-</div>
+<ul class="recipe__content--ul">
+  <li>Title: {{input value=title}}</li>
+  <li>Description: {{input value=description}}</li>
+  <li>
+    Steps:
+    <ol class="recipe__content--ol">
+      <li>
+        {{input type=text value=stepItem}}
+      </li>
+    </ol>
+  </li>
+  <button {{action "create"}}>Create</button>
+</ul>
