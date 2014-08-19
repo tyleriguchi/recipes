@@ -1,21 +1,39 @@
-<div>
-  <ul>
-    <li>Title: {{input value=title}}</li>
-    <li>Description: {{input value=description}}</li>
-    <li>
-      Steps:
+<div class="edit">
+  <form {{action "save" this on="submit"}}>
+    <label>Title: {{input value=title}}</label>
+    <label>Description: {{input value=description}}</label>
+
+    <fieldset>
+      <legend>Ingredients</legend>
+      <ul>
+      {{#each ingredient in ingredients}}
+        <li>
+          <label>
+            {{input type=text value=ingredient.item}}
+          </label>
+        </li>
+      {{/each}}
+      </ul>
+    </fieldset>
+
+    <fieldset>
+      <legend>Steps</legend>
       <ol>
       {{#each step in steps}}
         <li>
-          {{input type=text value=step.item}}
+          <label>
+            {{input type=text value=step.item}}
+          </label>
         </li>
       {{else}}
         <li>
-          {{input type=text}}
+          <label>
+            {{input type=text}}
+          </label>
         </li>
       {{/each}}
       </ol>
-    </li>
-    <button {{action "save" this}}>Save</button>
-  </ul>
+    </fieldset>
+    <button>Save</button>
+  </form>
 </div>
