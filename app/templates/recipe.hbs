@@ -1,15 +1,15 @@
 
   <h2>{{title}}</h2>
 
-  <span class="recipe--text">Description: {{description}}</span>
+  <span class="recipe--text">Description:&emsp;{{description}}</span>
 
   <ul>Ingredients
-  {{#each ingredient in model.ingredients}}
+  {{#each ingredient in ingredients}}
     <li>{{ingredient.size}}, {{ingredient.item}}</li>
   {{/each}}
   </ul>
   <ol>Directions
-  {{#each step in model.steps}}
+  {{#each step in steps}}
     <li>{{step.item}}</li>
   {{/each}}
   </ol>

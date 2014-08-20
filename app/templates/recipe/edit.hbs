@@ -1,7 +1,7 @@
 <div class="edit">
   <form {{action "save" this on="submit"}}>
     <label>Title: {{input value=title}}</label>
-    <label>Description: {{input value=description}}</label>
+    <label>Description: {{textarea class="description-textarea" value=description}}</label>
 
     <fieldset>
       <legend>Ingredients</legend>

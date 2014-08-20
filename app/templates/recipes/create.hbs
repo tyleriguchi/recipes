@@ -1,13 +1,27 @@
-<ul class="recipe__content--ul">
-  <li>Title: {{input value=title}}</li>
-  <li>Description: {{input value=description}}</li>
-  <li>
-    Steps:
-    <ol class="recipe__content--ol">
+<form {{action "create" this on="submit"}}>
+  <label>Title: {{input value=title}}</label>
+  <label>Description: {{textarea class="description-textarea" value=description}}</label>
+
+  <fieldset>
+    <legend>Ingredients</legend>
+    <ul>
       <li>
-        {{input type=text value=stepItem}}
+        <label>
+          {{input type=text value=ingredientItem}}
+        </label>
+      </li>
+    </ul>
+  </fieldset>
+
+  <fieldset>
+    <legend>Steps</legend>
+    <ol>
+      <li>
+        <label>
+          {{input type=text value=stepItem}}
+        </label>
       </li>
     </ol>
-  </li>
-  <button {{action "create"}}>Create</button>
-</ul>
+  </fieldset>
+  <button>Save</button>
+</form>
