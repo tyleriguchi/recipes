@@ -13,21 +13,37 @@ export default Ember.ObjectController.extend({
       if (!description.trim()) { return; }
 
       // add some alert if nothing
-      
+
       var recipe = this.get('model');
       recipe.setProperties({
         'title': title,
         'description': description
       });
-      var item = this.get('stepItem');
+      var stepItem = this.get('stepItem');
+      if (!description) { return false; }
+      if (!description.trim()) { return; }
       var step = store.createRecord('step', {
-        item: item
+        item: stepItem
       });
 
-      recipe.get('steps').then(function(result) {
-        result.pushObject(step);
-        result.save();
+      var ingredientSize = this.get('ingredientSize');
+      var ingredientItem = this.get('ingredientItem');
+
+      var ingredient = store.createRecord('ingredient', {
+        size: ingredientSize,
+        item: ingredientItem
       });
+
+      recipe.get('steps')
+        .then(function(result) {
+          result.pushObject(step);
+        });
+
+      recipe.get('ingredients')
+        .then(function(result) {
+          result.pushObject(ingredient);
+          result.save();
+        });
 
       this.transitionToRoute('recipe', recipe);
 
