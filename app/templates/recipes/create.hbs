@@ -1,5 +1,5 @@
 <form {{action "create" this on="submit"}}>
-  <label>Title: {{input value=title}}</label>
+  <label>Title: {{input name="title" value=title}}</label>
   <label>Description: {{textarea class="description-textarea" value=description}}</label>
 
   <fieldset>
@@ -7,10 +7,10 @@
     <ul>
       <li>
         <label>
-          {{input type="number" min=1 max=100 step=1 value=ingredientSize}}
+          {{input class="number" type="number" min=1 max=100 step=1 value=ingredientSize}}
         </label>
         <label>
-          {{input type="text" value=ingredientItem}}
+          {{input class="ingredient" type="text" value=ingredientItem}}
         </label>
       </li>
     </ul>
@@ -21,10 +21,10 @@
     <ol>
       <li>
         <label>
-          {{input type=text value=stepItem}}
+          {{input class="step" type=text value=stepItem}}
         </label>
       </li>
     </ol>
   </fieldset>
-  <button>Save</button>
+  <button class="btn">Save</button>
 </form>

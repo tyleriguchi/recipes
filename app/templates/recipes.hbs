@@ -11,7 +11,11 @@
 </aside>
 
 <article class="recipe">
-  <div class="recipe--create">{{#link-to 'recipes.create'}}<button>Add recipe</button>{{/link-to}}</div>
+  <div class="recipe--create">
+    {{#link-to 'recipes.create'}}
+      <button class="btn">Add recipe</button>
+    {{/link-to}}
+  </div>
   <div class="recipe__content">
   {{outlet}}
   </div>

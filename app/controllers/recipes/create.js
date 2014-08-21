@@ -34,6 +34,7 @@ export default Ember.ObjectController.extend({
         item: ingredientItem
       });
 
+      // need to reformat
       recipe.get('steps')
         .then(function(result) {
           result.pushObject(step);
